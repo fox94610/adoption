@@ -15,7 +15,7 @@ Leveraged  unsplash.com API to get correct thumbnail dimensions required by reac
 Responsive grid -> Bootstrap  
 Airbnb's Eslint config: https://github.com/airbnb/javascript https://eslint.org  
 
-**Make Scaleable for Large Data Set**  
+**Ideally: Make Scaleable for Large Data Set**  
 Fetch process would be configured to consume bite-size data sets to fill out page on user scroll
 
 **Known Issues**  
