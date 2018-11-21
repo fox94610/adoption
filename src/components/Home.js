@@ -18,8 +18,8 @@ type Pet = {
   image: string,
   source: string,
   petName: string,
-  thumbUrl: string,
-  picData: {},
+  thumbHt: number,
+  thumbUrl: string
 };
 
 type PetArray = Array<Pet>;
@@ -31,6 +31,11 @@ type State = {
   lightBoxIsOpen: boolean,
   photoIndex: number,
 };
+
+type PicData = {
+  width: number,
+  height: number,
+}
 
 const thumbWidth = 170;
 
@@ -47,8 +52,11 @@ export default class Home extends Component<Props, State> {
     this.fetchData = this.fetchData.bind(this);
   }
 
-  componentDidMount() {
-    this.fetchData('dogs'); // Pretending there are other animal data sets available
+  async componentDidMount() {
+    this.setState({ isLoading: true });
+    const animalType = 'dogs'; // Pretending there are other animal data sets available
+    const data = await this.fetchData(animalType);
+    this.onFetchComplete(data, animalType);
   }
 
   onPictureSelect(index: number) {
@@ -80,7 +88,7 @@ export default class Home extends Component<Props, State> {
     });
   }
 
-  getPicData(id: string) {
+  getPicData(id: string): Promise<PicData> {
     return fetch(
       `//api.unsplash.com/photos/${id}?client_id=5db564338bd08f56cb82e8db2375eb8a7568381d89f80386002549351caeac7d`,
     )
@@ -90,26 +98,26 @@ export default class Home extends Component<Props, State> {
         }
         return response;
       })
-      .then(response => response.json())
-      .catch(() => console.warn('picture data fetch failure'));
+      .then(response => response.json());
+    // TODO gracefully handle fetch failure that satisfies Flow and Jest
+    // and prints out message to screen
+    // .catch(() => console.warn('picture data fetch failure'));
   }
 
   fetchData: Function;
 
-  fetchData(animalType: string) {
-    fetch(`data/${animalType}.json`)
+  fetchData(animalType: string): Promise<Object> {
+    return fetch(`data/${animalType}.json`)
       .then(response => {
         if (!response.ok) {
           console.warn(response.statusText);
         }
-        this.setState({ isLoading: true });
         return response;
       })
-      .then(response => response.json())
-      .then(data => {
-        this.onFetchComplete(data, animalType);
-      })
-      .catch(() => console.warn('animal data fetch failure'));
+      .then(response => response.json());
+    // TODO gracefully handle fetch failure that satisfies Flow and Jest
+    // and prints out message to screen
+    // .catch(() => console.warn('animal data fetch failure'));
   }
 
   render() {

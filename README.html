@@ -1055,20 +1055,26 @@ body .markdown-body
 .codehilite .vi{color:teal}
 .codehilite .il{color:#009999}
 .codehilite .gc{color:#999;background-color:#EAF2F5}
-</style><title>README</title></head><body><article class="markdown-body"><h1 id="live">Live<a class="headerlink" href="#live" title="Permanent link"></a></h1>
-<p><a href="https://adoption.foxflare.com">https://adoption.foxflare.com</a>  </p>
-<h1 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link"></a></h1>
-<p>I focused on weaving a variety of tools together to ensure a clean execution  </p>
-<h1 id="tools-used">Tools used<a class="headerlink" href="#tools-used" title="Permanent link"></a></h1>
-<p>Customized version of &ldquo;Create React App&rdquo; (ejected) (React v16.6)<br />
-CSS -&gt; via Emotion (<a href="https://emotion.sh/">https://emotion.sh/</a>)<br />
+</style><title>README</title></head><body><article class="markdown-body"><p><strong>Live</strong><br />
+<a href="https://adoption.foxflare.com">https://adoption.foxflare.com</a>  </p>
+<p><strong>Emphasis</strong><br />
+Weaving a variety of tools together to ensure clean execution<br />
+Balancing/modifying Airbnb eslint rules in order for it to play nice with JsPrettier syntax formatting<br />
+Wrote Jest unit test for one of the fetch executions  </p>
+<p><strong>Tools used</strong><br />
+Customized version of &ldquo;Create React App&rdquo; (ejected) (React v16.6)<br />
 Typechecking -&gt; Flow (<a href="https://flow.org/en/">https://flow.org/en/</a>)<br />
 Automated testing -&gt; Jest (<a href="https://jestjs.io/en/">https://jestjs.io/en/</a>)<br />
 Masonary layout -&gt; react-stack-grid (<a href="https://github.com/tsuyoshiwada/react-stack-grid">https://github.com/tsuyoshiwada/react-stack-grid</a>)<br />
+Leveraged  unsplash.com API to get correct thumbnail dimensions required by react-stack-grid <br />
 Responsive grid -&gt; Bootstrap<br />
-Linting -&gt; Airbnb&rsquo;s Eslint config: <a href="https://github.com/airbnb/javascript">https://github.com/airbnb/javascript</a> (<a href="https://eslint.org">https://eslint.org</a>)  </p>
-<h1 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link"></a></h1>
-<p>yarn start<br />
+Linting -&gt; Airbnb&rsquo;s Eslint config: <a href="https://github.com/airbnb/javascript">https://github.com/airbnb/javascript</a> (<a href="https://eslint.org">https://eslint.org</a>)<br />
+Linting config plays nicely with JsPrettier code formatting</p>
+<p><strong>Known Issues</strong><br />
+On mobile, 3rd party tool &ldquo;react-image-lightbox&rdquo; intermittently does not render whole image<br />
+3rd party tool &ldquo;react-stack-grid&rdquo; re-adds dom elements on popup open and close  </p>
+<p><strong>Commands</strong><br />
+yarn start<br />
 yarn build<br />
 yarn test<br />
 yarn run flow  </p></article></body></html>

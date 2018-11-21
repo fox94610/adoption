@@ -1,21 +1,26 @@
-# Live
+**Live**  
 https://adoption.foxflare.com  
 
-# Emphasis
+**Emphasis**  
 Weaving a variety of tools together to ensure clean execution  
-Balancing (modifying) Airbnb eslint rules in order for it to play nice with JsPrettier syntax formatting  
+Balancing/modifying Airbnb eslint rules in order for it to play nice with JsPrettier syntax formatting  
+Wrote Jest unit test for one of the fetch executions  
 
-# Tools used
+**Tools used**  
 Customized version of "Create React App" (ejected) (React v16.6)  
-CSS -> via Emotion (https://emotion.sh/)  
 Typechecking -> Flow (https://flow.org/en/)  
 Automated testing -> Jest (https://jestjs.io/en/)  
 Masonary layout -> react-stack-grid (https://github.com/tsuyoshiwada/react-stack-grid)  
+Leveraged  unsplash.com API to get correct thumbnail dimensions required by react-stack-grid   
 Responsive grid -> Bootstrap  
 Linting -> Airbnb's Eslint config: https://github.com/airbnb/javascript (https://eslint.org)  
 Linting config plays nicely with JsPrettier code formatting
 
-# Commands
+**Known Issues**  
+On mobile, 3rd party tool "react-image-lightbox" intermittently does not render whole image  
+3rd party tool "react-stack-grid" re-adds dom elements on popup open and close  
+
+**Commands**  
 yarn start  
 yarn build  
 yarn test  
