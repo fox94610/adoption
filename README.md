@@ -13,8 +13,7 @@ Automated testing -> Jest (https://jestjs.io/en/)
 Masonary layout -> react-stack-grid (https://github.com/tsuyoshiwada/react-stack-grid)  
 Leveraged  unsplash.com API to get correct thumbnail dimensions required by react-stack-grid   
 Responsive grid -> Bootstrap  
-Linting -> Airbnb's Eslint config: https://github.com/airbnb/javascript (https://eslint.org)  
-Linting config plays nicely with JsPrettier code formatting
+Airbnb's Eslint config: https://github.com/airbnb/javascript https://eslint.org  
 
 **Known Issues**  
 On mobile, 3rd party tool "react-image-lightbox" intermittently does not render whole image  
