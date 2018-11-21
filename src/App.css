@@ -1,0 +1,110 @@
+header .custom-nav-bar {
+  background-color: #6504b5;
+  border: 0;
+  border-radius: 0; }
+  header .custom-nav-bar .logo {
+    font-family: "pacifico";
+    font-size: 1.7em; }
+    header .custom-nav-bar .logo:link, header .custom-nav-bar .logo:visited {
+      color: white; }
+    header .custom-nav-bar .logo:hover, header .custom-nav-bar .logo:active {
+      color: #FFEA3B; }
+  header .custom-nav-bar .navbar-nav {
+    font-size: 1.25em; }
+    header .custom-nav-bar .navbar-nav li a:link, header .custom-nav-bar .navbar-nav li a:visited {
+      color: white; }
+    header .custom-nav-bar .navbar-nav li a:hover, header .custom-nav-bar .navbar-nav li a:active {
+      color: #FFEA3B; }
+  header .custom-nav-bar .custom-nav-bar-toggle {
+    background-color: white; }
+
+.about .about-profile-pic {
+  border-radius: 6px;
+  float: left;
+  margin: 0.3em 1em 0.5em 0; }
+
+.home .pets-col .stack-grid picture {
+  cursor: pointer; }
+
+.news .sidebar-section img {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.pic-popup .background-tint {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: .6; }
+
+.pic-popup .box {
+  position: fixed;
+  z-index: 10;
+  top: 17px;
+  left: 17px;
+  right: 17px;
+  bottom: 17px;
+  background-color: white;
+  text-align: center;
+  padding: 10px 10px 10px; }
+  @media (min-width: 576px) {
+    .pic-popup .box {
+      top: 5%;
+      bottom: 5%;
+      left: 50%;
+      width: 70%;
+      max-width: 800px;
+      transform: translate(-50%);
+      padding: 0 40px; } }
+
+body {
+  font-size: 15px; }
+
+p {
+  color: grey;
+  font-weight: 300; }
+
+h1 {
+  color: #6504b5; }
+
+h2 {
+  color: #6504b5;
+  font-family: "mali";
+  font-size: 1.4em;
+  margin-top: 0; }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 2em;
+      margin-top: 20px; } }
+
+h3 {
+  color: #6504b5;
+  margin: 0 0 0.3em;
+  padding: 0; }
+
+figcaption {
+  font-size: 13px; }
+
+.header-image {
+  width: 100%;
+  margin-top: -2em;
+  margin-bottom: 2em; }
+
+.jumbotron p {
+  font-size: 1em; }
+  @media (min-width: 992px) {
+    .jumbotron p {
+      font-size: 1.5em; } }
+
+.ril__captionContent {
+  width: 100%;
+  text-align: center; }
+
+.lightbox-pet-name {
+  font-size: 2em; }
+
+.no-wrap {
+  white-space: nowrap; }

@@ -1,0 +1,71 @@
+// Phone vs non-phone (includes landscape phone)
+@mixin breakpoint($point: lg)
+  @if $point == lg
+    @media (min-width: 992px)
+      @content
+  @else if $point == sm
+    @media (max-width: 991.98px)
+      @content
+
+// Imported typeface from Google fonts via yarn
+$logo-font: 'pacifico'
+$alt-font: 'mali'
+
+// Global color defs
+$purple: #6504b5
+$yellow: #FFEA3B
+
+@import './components/CustomNavbar.sass'
+@import './components/About.sass'
+@import './components/Home.sass'
+@import './components/News.sass'
+@import './components/PicturePopup.sass'
+
+body
+  font-size: 15px
+
+p
+  color: grey
+  font-weight: 300
+
+h1
+  color: $purple
+
+h2
+  color: $purple
+  font-family: $alt-font
+  font-size: 1.4em
+  margin-top: 0
+  @include breakpoint(lg)
+    font-size: 2em
+    margin-top: 20px
+
+h3
+  color: $purple
+  margin: 0 0 0.3em
+  padding: 0
+
+figcaption
+  font-size: 13px
+
+
+.header-image
+  width: 100%
+  margin-top: -2em
+  margin-bottom: 2em
+
+.jumbotron p
+  font-size: 1em
+  @include breakpoint(lg)
+    font-size: 1.5em
+
+// React Image Lightbox package style override
+.ril__captionContent
+  width: 100%
+  text-align: center
+
+.lightbox-pet-name
+  font-size: 2em
+
+.no-wrap
+  white-space: nowrap;

@@ -1,0 +1,93 @@
+{
+  "dogs": [
+  {
+      "image": "img/1.jpeg",
+      "source": "https://unsplash.com/photos/ybHtKz5He9Y",
+      "petName": "Jenny"
+    },
+
+    {
+      "image": "img/2.jpeg",
+      "source": "https://unsplash.com/photos/rY79kwEEyGo",
+      "petName": "Ralph"
+    },
+
+    {
+      "image": "img/3.jpeg",
+      "source": "https://unsplash.com/photos/ngqyo2AYYnE",
+      "petName": "Lestlie"
+    },
+
+    {
+      "image": "img/4.jpeg",
+      "source": "https://unsplash.com/photos/9A64wd1QaAU",
+      "petName": "Andrew"
+    },
+
+    {
+      "image": "img/5.jpeg",
+      "source": "https://unsplash.com/photos/915UJQaxtrk",
+      "petName": "Frank"
+    },
+
+    {
+      "image": "img/6.jpeg",
+      "source": "https://unsplash.com/photos/mx0DEnfYxic",
+      "petName": "Samantha"
+    },
+
+    {
+      "image": "img/7.jpeg",
+      "source": "https://unsplash.com/photos/OsOQhAzcEKc",
+      "petName": "James"
+    },
+
+    {
+      "image": "img/8.jpeg",
+      "source": "https://unsplash.com/photos/6WneSv56YVI",
+      "petName": "Herold"
+    },
+
+    {
+      "image": "img/9.jpeg",
+      "source": "https://unsplash.com/photos/CdVG9f96kyg",
+      "petName": "Rachel"
+    },
+
+    {
+      "image": "img/10.jpeg",
+      "source": "https://unsplash.com/photos/bVA2DI7c9e8",
+      "petName": "Gus"
+    },
+
+    {
+      "image": "img/11.jpeg",
+      "source": "https://unsplash.com/photos/GvhSUEN-Lm8",
+      "petName": "Marci"
+    },
+
+    {
+      "image": "img/12.jpeg",
+      "source": "https://unsplash.com/photos/t2XHKIdc4Kw",
+      "petName": "George"
+    },
+
+    {
+      "image": "img/13.jpeg",
+      "source": "https://unsplash.com/photos/saRU3vzmgkY",
+      "petName": "Maria"
+    },
+
+    {
+      "image": "img/14.jpeg",
+      "source": "https://unsplash.com/photos/1z-kI6gIEpg",
+      "petName": "Cornelius"
+    },
+
+    {
+      "image": "img/15.jpeg",
+      "source": "https://unsplash.com/photos/zHZ2nTnBnAQ",
+      "petName": "Adonis"
+    }
+  ]
+}
