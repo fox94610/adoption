@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Grid, Row, Col } from 'react-bootstrap';
 
@@ -8,7 +8,7 @@ const dogCatImg = require('../assets/img/header-dog-cat.png');
 const smlPetImg = require('../assets/img/smaller-pet.png');
 
 export default () => (
-  <Fragment>
+  <section>
     <Helmet>
       <meta charSet="utf-8" />
       <title>News · Asana Pet Adoption</title>
@@ -74,5 +74,5 @@ export default () => (
         </Col>
       </Row>
     </Grid>
-  </Fragment>
+  </section>
 );

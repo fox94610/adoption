@@ -49,7 +49,6 @@ export default class Home extends Component<Props, State> {
       lightBoxIsOpen: false,
       photoIndex: 0,
     };
-    this.fetchData = this.fetchData.bind(this);
   }
 
   async componentDidMount() {
@@ -104,8 +103,6 @@ export default class Home extends Component<Props, State> {
     // .catch(() => console.warn('picture data fetch failure'));
   }
 
-  fetchData: Function;
-
   fetchData(animalType: string): Promise<Object> {
     return fetch(`data/${animalType}.json`)
       .then(response => {
@@ -122,7 +119,7 @@ export default class Home extends Component<Props, State> {
 
   render() {
     return (
-      <div className="home">
+      <section className="home">
         <Helmet>
           <meta charSet="utf-8" />
           <title>The Best Place to Adopt a Pet · Asana Pet Adoption</title>
@@ -137,7 +134,7 @@ export default class Home extends Component<Props, State> {
           </Jumbotron>
           <Row className="show-grid text-center">
             <Col className="pets-col">
-              {/* multi-conditionals require a iife */}
+              {/* multi-conditionals require iife */}
               {(() => {
                 let content;
                 if (this.state.hasErrored) {
@@ -224,7 +221,7 @@ export default class Home extends Component<Props, State> {
             }
           />
         )}
-      </div>
+      </section>
     );
   }
 }
