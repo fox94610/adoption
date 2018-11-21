@@ -7,13 +7,11 @@ Balancing (modifying) Airbnb eslint rules in order for it to play nice with JsPr
 
 # Tools used
 Customized version of "Create React App" (ejected) (React v16.6)  
-CSS -> via Emotion (https://emotion.sh/)  
 Typechecking -> Flow (https://flow.org/en/)  
 Automated testing -> Jest (https://jestjs.io/en/)  
 Masonary layout -> react-stack-grid (https://github.com/tsuyoshiwada/react-stack-grid)  
 Responsive grid -> Bootstrap  
-Linting -> Airbnb's Eslint config: https://github.com/airbnb/javascript (https://eslint.org)  
-Linting config plays nicely with JsPrettier code formatting
+Airbnb's Eslint config: https://github.com/airbnb/javascript https://eslint.org  
 
 # Commands
 yarn start  
