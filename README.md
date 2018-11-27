@@ -3,7 +3,7 @@ https://adoption.foxflare.com
 
 **Emphasis Tooling**  
 Weaving a variety of tools together to ensure clean execution  
-Balancing/modifying Airbnb eslint rules in order for it to play nice with JsPrettier syntax formatting  
+Balancing/modifying Airbnb eslint rules in order for it to play nice with JsPrettier syntax formatting. To see rule adjustments -> /.eslintrc.json  
 Wrote Jest unit test for one of the fetch executions  
 
 **Tools used**  
