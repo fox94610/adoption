@@ -12,7 +12,7 @@ Typechecking -> Flow (https://flow.org/en/)
 Automated testing -> Jest (https://jestjs.io/en/)  
 Masonary layout -> react-stack-grid (https://github.com/tsuyoshiwada/react-stack-grid)  
 Leveraged  unsplash.com API to get correct thumbnail dimensions required by react-stack-grid   
-Responsive grid -> Bootstrap  
+Responsive grid -> react-bootstrap (https://react-bootstrap.github.io/)  
 Airbnb's Eslint config: https://github.com/airbnb/javascript https://eslint.org  
 
 **Ideally: Make Scaleable for Large Data Set**  
